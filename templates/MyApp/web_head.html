@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="{%  static 'css/homestyle.css' %}"/>  
+        <title>Home · Rapha Appointment</title>
+             
+    </head>
+    <body>
+            <div class="container" style="font-family: serif" >
+                <div class="heading">
+                    <img src="{% static 'images/rapha.jpg' %}"alt="No image found">
+
+                      <h1> Rapha Healthcare</h1>
+                </div>
+            </div>
+    </body>
+    <style>
+    
+        body {
+            background-color: rgb(255, 255, 255);
+            padding: 0px;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }   
+        .heading img{
+            padding-left: 20px;
+            height: 100px;
+            float:left;
+        }
+        .heading h1{
+            margin-bottom:12px;
+            padding-top: 34px;
+            padding-bottom: 23px;
+            padding-left: 140px;
+            font-family: Arial;
+            color: rgb(57, 131, 32);   
+        }
+    
+    </style>
+</html>

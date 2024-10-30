@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">  
+</head>
+<body>
+
+
+<div class="dashboard" style="max-width:100%">
+  <img class="mySlides" src="{% static 'images/bg.jpg' %}" style="width:100%">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) 
+  {
+    myIndex = 1
+  }    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <style>
+    body {
+        background-color: rgb(255, 255, 255);
+        padding: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }   
+
+    .dashboard img{
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        padding-bottom:10px;
+    }
+    </style>
+</body></html>
+
